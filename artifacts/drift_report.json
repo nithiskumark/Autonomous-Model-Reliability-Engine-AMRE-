@@ -1,0 +1,37 @@
+{
+    "quality_score": 99.86,
+    "drift_score": 0.0,
+    "reliability_score": 49.93,
+    "psi_report": [
+        {
+            "feature": "age",
+            "psi": 2.3743,
+            "drift_detected": true
+        },
+        {
+            "feature": "income",
+            "psi": 6.2911,
+            "drift_detected": true
+        },
+        {
+            "feature": "savings_rate",
+            "psi": 4.4195,
+            "drift_detected": true
+        },
+        {
+            "feature": "debt_ratio",
+            "psi": 3.2215,
+            "drift_detected": true
+        },
+        {
+            "feature": "purchase_power",
+            "psi": 6.9008,
+            "drift_detected": true
+        },
+        {
+            "feature": "purchasing_power",
+            "psi": 4.1908,
+            "drift_detected": true
+        }
+    ]
+}
