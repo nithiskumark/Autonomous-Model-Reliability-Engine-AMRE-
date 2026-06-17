@@ -1,6 +1,6 @@
 """
 Autonoumous Model Reliability Engine (AMRE)
-Production ML Monitoring Platform
+Production ML Monitoring Engine
 
 Data Generator
 
@@ -93,12 +93,12 @@ def gen_data(n=5000):
         feature_range = (1, 100)
     )
 
-    purchasing_power = scaler.fit(
+    purchasing_power = scaler.fit_transform(
         df[["purchase_power"]]
     )
 
     df["purchasing_power"] = pd.DataFrame(
-        purchasing_power.round(2), 
+        np.round(purchasing_power, 2), 
         columns=["purchasing_power"]
     )
 
